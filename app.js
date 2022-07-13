@@ -1,6 +1,5 @@
-const amount = 12;
-if (amount < 10) {
-  console.log("small number");
-} else {
-  console.log("large number");
-}
+const _ = require("lodash");
+
+const arr = [1, [2, 3, 4, 5], 6];
+
+console.log(_.flattenDeep(arr));
